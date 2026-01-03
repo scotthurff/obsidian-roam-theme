@@ -1,0 +1,263 @@
+/*
+ * Roam-style theme for Obsidian Minimal
+ * Based on original roam/css settings
+ * Colors: Gold headers/links, light blue body, dark background
+ */
+
+/* Override Minimal's CSS variables */
+.theme-dark {
+  /* Main backgrounds */
+  --background-primary: #1D1F27 !important;
+  --background-secondary: #000911 !important;
+  --background-secondary-alt: #00162B !important;
+
+  /* Text colors */
+  --text-normal: #98daf2 !important;
+  --text-muted: #8d9fb9 !important;
+  --text-faint: #6b7a8a !important;
+
+  /* Accent color (gold) */
+  --text-accent: #ffc76a !important;
+  --text-accent-hover: #ffdb99 !important;
+  --interactive-accent: #ffc76a !important;
+  --interactive-accent-hover: #ffdb99 !important;
+
+  /* Headers - override colorful headings */
+  --h1-color: #ffc76a !important;
+  --h2-color: #ffc76a !important;
+  --h3-color: #ffc76a !important;
+  --h4-color: #ffc76a !important;
+  --h5-color: #ffc76a !important;
+  --h6-color: #ffc76a !important;
+
+  /* Minimal theme specific header variables */
+  --color-orange: #ffc76a !important;
+  --color-red: #ffc76a !important;
+  --color-yellow: #ffc76a !important;
+  --color-green: #ffc76a !important;
+  --color-cyan: #ffc76a !important;
+  --color-blue: #ffc76a !important;
+  --color-purple: #ffc76a !important;
+  --color-pink: #ffc76a !important;
+
+  /* Links */
+  --link-color: #ffc76a !important;
+  --link-color-hover: #ffdb99 !important;
+  --link-external-color: #ffc76a !important;
+
+  /* Tags */
+  --tag-color: #CB8A1E !important;
+  --tag-background: rgba(255, 255, 255, 0.05) !important;
+
+  /* Borders */
+  --background-modifier-border: rgba(255, 255, 255, 0.06) !important;
+
+  /* Code */
+  --code-normal: #98daf2 !important;
+  --code-background: #000911 !important;
+}
+
+/* Font family - Operator Mono */
+body {
+  -webkit-font-smoothing: antialiased;
+  --font-text: "Operator Mono", Menlo, Monaco, "Courier New", monospace !important;
+  --font-monospace: "Operator Mono", Menlo, Monaco, "Courier New", monospace !important;
+}
+
+/* Base font size */
+.markdown-source-view,
+.markdown-preview-view {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* Force header colors - override Minimal colorful headings */
+.theme-dark .markdown-source-view.mod-cm6 .cm-header-1,
+.theme-dark .markdown-preview-view h1,
+.theme-dark .inline-title,
+.theme-dark .HyperMD-header-1,
+.theme-dark h1 {
+  color: #ffc76a !important;
+  font-size: 28px !important;
+  font-weight: 700 !important;
+}
+
+.theme-dark .markdown-source-view.mod-cm6 .cm-header-2,
+.theme-dark .markdown-preview-view h2,
+.theme-dark .HyperMD-header-2,
+.theme-dark h2 {
+  color: #ffc76a !important;
+  font-size: 22px !important;
+  font-weight: 700 !important;
+}
+
+.theme-dark .markdown-source-view.mod-cm6 .cm-header-3,
+.theme-dark .markdown-preview-view h3,
+.theme-dark .HyperMD-header-3,
+.theme-dark h3 {
+  color: #ffc76a !important;
+  font-size: 20px !important;
+  font-weight: 600 !important;
+}
+
+.theme-dark .markdown-source-view.mod-cm6 .cm-header-4,
+.theme-dark .markdown-preview-view h4,
+.theme-dark .HyperMD-header-4,
+.theme-dark h4 {
+  color: #ffc76a !important;
+  font-size: 18px !important;
+  font-weight: 600 !important;
+}
+
+.theme-dark .markdown-source-view.mod-cm6 .cm-header-5,
+.theme-dark .markdown-preview-view h5,
+.theme-dark .HyperMD-header-5,
+.theme-dark h5 {
+  color: #ffc76a !important;
+}
+
+.theme-dark .markdown-source-view.mod-cm6 .cm-header-6,
+.theme-dark .markdown-preview-view h6,
+.theme-dark .HyperMD-header-6,
+.theme-dark h6 {
+  color: #ffc76a !important;
+}
+
+/* Internal links - italic like Roam */
+.theme-dark .internal-link,
+.theme-dark .cm-hmd-internal-link,
+.theme-dark .cm-link,
+.theme-dark a.internal-link {
+  font-style: italic !important;
+}
+
+/* Wiki-link styling in source mode */
+.theme-dark .cm-hmd-internal-link .cm-underline,
+.theme-dark span.cm-hmd-internal-link {
+  font-style: italic !important;
+}
+
+/* Tags styling */
+.theme-dark .tag,
+.theme-dark a.tag {
+  background: rgba(255, 255, 255, 0.05) !important;
+  color: #CB8A1E !important;
+  font-weight: 500;
+  padding: 0 6px;
+  border-radius: 4px;
+}
+
+.theme-dark .tag:hover,
+.theme-dark a.tag:hover {
+  color: #fff !important;
+  text-decoration: none;
+}
+
+/* Block references */
+.theme-dark .internal-embed {
+  font-style: italic;
+  color: #8d9fb9;
+  border-left: 2px solid rgba(141, 156, 176, 0.2);
+  padding-left: 8px;
+}
+
+/* Sidebar */
+.theme-dark .workspace-leaf-content[data-type="file-explorer"],
+.theme-dark .workspace-leaf-content[data-type="search"],
+.theme-dark .workspace-leaf-content[data-type="tag"],
+.theme-dark .workspace-leaf-content[data-type="starred"],
+.theme-dark .workspace-leaf-content[data-type="backlink"],
+.theme-dark .workspace-leaf-content[data-type="outgoing-link"] {
+  background-color: #000911 !important;
+}
+
+/* Right sidebar background */
+.theme-dark .mod-right-split .workspace-leaf-content {
+  background-color: #000911 !important;
+}
+
+/* Backlinks pane */
+.theme-dark .backlink-pane {
+  background-color: #000911 !important;
+}
+
+/* Search and inputs */
+.theme-dark input.prompt-input,
+.theme-dark .search-input {
+  background-color: #000911 !important;
+}
+
+.theme-dark input:focus {
+  box-shadow: 0 0 0 2px #137cbd;
+}
+
+/* Reference items / embeds */
+.theme-dark .markdown-embed {
+  background-color: #000911 !important;
+  border: 1px solid rgba(255, 255, 255, 0.06) !important;
+  border-radius: 6px;
+  padding: 8px;
+}
+
+/* Selection highlight */
+.theme-dark .markdown-source-view .cm-selectionBackground,
+.theme-dark ::selection {
+  background-color: rgba(0, 9, 17, 0.8) !important;
+}
+
+/* Properties panel styling */
+.theme-dark .metadata-container {
+  background-color: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* Scrollbars */
+.theme-dark ::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.theme-dark ::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* File explorer text */
+.theme-dark .nav-file-title,
+.theme-dark .nav-folder-title {
+  color: #98daf2 !important;
+}
+
+/* Ribbon (left icon bar) */
+.theme-dark .workspace-ribbon {
+  background-color: #000911 !important;
+}
+
+/* Status bar at bottom */
+.theme-dark .status-bar {
+  background-color: #000911 !important;
+}
+
+/* Wider text/content width */
+.theme-dark {
+  --file-line-width: 900px !important;
+  --line-width: 900px !important;
+}
+
+/* Mobile padding - prevent content from being flush with viewport edges */
+.is-mobile .markdown-source-view,
+.is-mobile .markdown-preview-view,
+.is-mobile .markdown-reading-view {
+  padding-left: 12px !important;
+  padding-right: 12px !important;
+}
+
+.is-mobile .cm-contentContainer,
+.is-mobile .cm-content {
+  padding-left: 12px !important;
+  padding-right: 12px !important;
+}
+
+/* Also handle the editor container on mobile */
+.is-mobile .workspace-leaf-content[data-type="markdown"] .view-content {
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+}
