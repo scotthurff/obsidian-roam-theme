@@ -261,3 +261,10 @@ body {
   padding-left: 8px !important;
   padding-right: 8px !important;
 }
+
+/* Daily Notes Editor - add bottom padding to editor area for easier tapping */
+.daily-note-editor .cm-editor,
+.daily-note-editor .markdown-source-view,
+.daily-note-editor .cm-content {
+  padding-bottom: 30px !important;
+}
