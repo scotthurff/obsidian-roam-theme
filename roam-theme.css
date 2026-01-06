@@ -246,20 +246,26 @@ body {
 .is-mobile .markdown-source-view,
 .is-mobile .markdown-preview-view,
 .is-mobile .markdown-reading-view {
-  padding-left: 12px !important;
-  padding-right: 12px !important;
+  padding-left: 8px !important;
+  padding-right: 8px !important;
 }
 
 .is-mobile .cm-contentContainer,
 .is-mobile .cm-content {
-  padding-left: 12px !important;
-  padding-right: 12px !important;
+  padding-left: 6px !important;
+  padding-right: 6px !important;
+}
+
+/* Mobile headline/title needs more breathing room */
+.is-mobile .inline-title {
+  padding-left: 8px !important;
+  margin-left: 0 !important;
 }
 
 /* Also handle the editor container on mobile */
 .is-mobile .workspace-leaf-content[data-type="markdown"] .view-content {
-  padding-left: 8px !important;
-  padding-right: 8px !important;
+  padding-left: 6px !important;
+  padding-right: 6px !important;
 }
 
 /* Daily Notes Editor - add bottom padding to editor area for easier tapping */
